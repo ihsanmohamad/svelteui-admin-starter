@@ -8,7 +8,7 @@
     { maxWidth: 'sm', cols: 1 },
     { maxWidth: 1050, cols: 1 },
     { maxWidth: 1450, cols: 2 },
-	{ maxWidth: 1680, cols: 3},
+	{ maxWidth: 1700, cols: 3},
 	{ minWidth: 2090, cols: 3}
   ]}>
 	{#each {length: 8} as _, i}
