@@ -32,8 +32,8 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"@svelteuidev/composables": "^0.6.5",
-		"@svelteuidev/core": "^0.6.5",
+		"@svelteuidev/composables": "0.6.5",
+		"@svelteuidev/core": "0.6.5",
 		"cookie": "^0.4.1",
 		"lucide-svelte": "^0.59.0"
 	}
