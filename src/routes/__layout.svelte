@@ -26,9 +26,7 @@
 		}}
 	>
 		<Navbar slot="navbar" fixed hidden={!opened} width={{ base: 300 }} override={{ p: '$mdPX' }}>
-			<ShellSection grow>
-				<NavContent toggleOpen={toggleOpened}/>
-			</ShellSection>
+			<NavContent toggleOpen={toggleOpened} />
 		</Navbar>
 		<Header slot="header" height={60} override={{ p: '$mdPX', pt: 12 }} fixed>
 			<HeadContent {isDark} {opened} toggle={toggleTheme} toggleOpen={toggleOpened} />

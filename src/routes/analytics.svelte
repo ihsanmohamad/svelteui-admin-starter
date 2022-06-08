@@ -74,8 +74,6 @@
 	$: ({ classes, getStyles } = useStyles());
 </script>
 
-<Title order={2}>This is analytics page</Title>
-
 <div class={getStyles()}>
 	<Container size="lg">
 		<div class={classes.inner}>

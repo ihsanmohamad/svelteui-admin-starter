@@ -32,7 +32,7 @@
 				size={30}
 				use={[[hotkey, [['mod+J', toggle]]]]}
 			>
-				{#if isDark}
+				{#if !isDark}
 					<Moon size={16} />
 				{:else}
 					<Sun size={16} />

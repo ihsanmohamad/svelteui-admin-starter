@@ -1,4 +1,3 @@
-
 <script lang="ts">
 	export let size: number = 110;
 </script>
