@@ -13,11 +13,13 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@carbon/charts-svelte": "^1.1.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.4.1",
 		"@typescript-eslint/eslint-plugin": "^5.10.1",
 		"@typescript-eslint/parser": "^5.10.1",
+		"d3": "^7.4.4",
 		"eslint": "^8.12.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -31,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@carbon/charts": "^1.1.0",
 		"@fontsource/fira-mono": "^4.5.0",
 		"@svelteuidev/composables": "0.6.5",
 		"@svelteuidev/core": "0.6.5",

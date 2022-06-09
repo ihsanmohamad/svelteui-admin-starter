@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Card, Image, Group, Text, Badge, Button, SimpleGrid } from '@svelteuidev/core';
 </script>
-
 <SimpleGrid
 	cols={4}
 	breakpoints={[
@@ -14,7 +13,7 @@
 	]}
 >
 	{#each { length: 8 } as _, i}
-		<div style="width: 340px">
+		<div>
 			<Card.Container shadow="md" p="lg">
 				<Card.Section first padding="lg">
 					<Image

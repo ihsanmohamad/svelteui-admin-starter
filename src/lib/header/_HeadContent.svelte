@@ -30,6 +30,7 @@
 				variant="default"
 				on:click={toggle}
 				size={30}
+				aria-label="Toggle dark or light mode"
 				use={[[hotkey, [['mod+J', toggle]]]]}
 			>
 				{#if !isDark}
