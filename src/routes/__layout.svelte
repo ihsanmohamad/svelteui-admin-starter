@@ -1,5 +1,13 @@
 <script lang="ts">
-	import { SvelteUIProvider, fns, AppShell, Navbar, Header, Seo, Container } from '@svelteuidev/core';
+	import {
+		SvelteUIProvider,
+		fns,
+		AppShell,
+		Navbar,
+		Header,
+		Seo,
+		Container
+	} from '@svelteuidev/core';
 	import HeadContent from '$lib/header/_HeadContent.svelte';
 	import NavContent from '$lib/header/_NavContent.svelte';
 
@@ -15,9 +23,7 @@
 </script>
 
 <SvelteUIProvider withNormalizeCSS withGlobalStyles themeObserver={isDark ? 'dark' : 'light'} ssr>
-	<Seo
-    	
- 	/>
+	<Seo />
 	<AppShell
 		override={{
 			main: {
@@ -34,7 +40,7 @@
 		<Header slot="header" height={60} override={{ p: '$mdPX', pt: 12 }} fixed>
 			<HeadContent {isDark} {opened} toggle={toggleTheme} toggleOpen={toggleOpened} />
 		</Header>
-		<Container fluid override={{ mt: '$mdPX' }}>
+		<Container fluid override={{ mt: '$0', padding: 0, '@md': { padding: 16 } }}>
 			<slot />
 		</Container>
 	</AppShell>

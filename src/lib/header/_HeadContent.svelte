@@ -12,7 +12,7 @@
 </script>
 
 <Group override={{ height: '100%', '@md': { px: 20 } }} position="apart">
-	<Burger {opened} on:click={toggleOpen} override={{ d: 'block', '@sm': { d: 'none' } }} />
+	<Burger {opened} on:click={toggleOpen} override={{ d: 'block', '@md': { d: 'none' } }} />
 	<a href="/" style="text-decoration: none;">
 		<Group>
 			<Logo size={35} />

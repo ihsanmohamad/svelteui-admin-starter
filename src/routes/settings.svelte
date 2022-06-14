@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { Card, Image, Group, Text, Badge, Button, SimpleGrid } from '@svelteuidev/core';
 </script>
+
 <SimpleGrid
 	cols={4}
 	breakpoints={[
 		{ maxWidth: 'xs', cols: 1 },
-		{ maxWidth: 'sm', cols: 1 },
-		{ maxWidth: 1050, cols: 1 },
+		{ maxWidth: 'sm', cols: 2 },
 		{ maxWidth: 1450, cols: 2 },
 		{ maxWidth: 1700, cols: 3 },
 		{ minWidth: 2090, cols: 3 }

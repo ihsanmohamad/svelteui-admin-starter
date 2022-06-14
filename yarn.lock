@@ -2,18 +2,18 @@
 # yarn lockfile v1
 
 
-"@carbon/charts-svelte@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@carbon/charts-svelte/-/charts-svelte-1.1.0.tgz#a7f80d3c77f6deb9ed01a090dfc0112ca729dcbd"
-  integrity sha512-tkYBoqAi2HtLPw7vxzWN//4LdO1rJMiZ/iYWeYhaXDHBMZWG1jK6W06M597DqNOkonZe62mQN95xeJDbUl6pZQ==
+"@carbon/charts-svelte@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@carbon/charts-svelte/-/charts-svelte-1.2.1.tgz#399a7705930cf818767912adeb9e3b2fc906beec"
+  integrity sha512-izs8oBFyML9OxnsgZUv1jhC+qVTvHY7zc/LWcNcbZydHrhamP1Qil3hqWUUVcBjJoDeP2B8vRpkfym7Ry05VsQ==
   dependencies:
-    "@carbon/charts" "^1.1.0"
+    "@carbon/charts" "^1.2.1"
     "@carbon/telemetry" "0.1.0"
 
-"@carbon/charts@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@carbon/charts/-/charts-1.1.0.tgz#aa50c083fa87ac1ae5f4f112178c7b8866b6d6e9"
-  integrity sha512-TGktQsRa4jcRhmjfs5WOZhVBtt+aVeiDIc7GQ64xZwcf9AmDZTgB+hoAG8Y6FRYZsT6Y5cdJj0JS5xfwhf+oGw==
+"@carbon/charts@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@carbon/charts/-/charts-1.2.1.tgz#fe363d9a00b6d8f50d35fb08ee0af752c2d75f99"
+  integrity sha512-iIpUfjc1O85+eEuZfFZmN+w2/gn9bF0PR+JJLCjzt8ogD1B+w2kiGDpQVjNDqMaoAFDuJzJHma5FBuROPm9ASQ==
   dependencies:
     "@carbon/styles" "^1.4.0"
     "@carbon/telemetry" "0.1.0"
@@ -108,6 +108,18 @@
     js-yaml "^4.1.0"
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
+
+"@floating-ui/core@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-0.7.2.tgz#f7af9613d080dc29360e77c970965b79b524d45a"
+  integrity sha512-FRVAkSNU/vGXLIsgbggcs70GkXKEOXgBBbNpYPNHSaKsCAMMd00NrjbtKTesxkdv9xm9N3+XiDlcFGY6WnatBg==
+
+"@floating-ui/dom@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-0.5.2.tgz#908f3febbfc0d6696d70921616ec194fe07af183"
+  integrity sha512-z1DnEa7F3d8Fm/eXSbii8UEGpcjZGkQaYYUI0WpEVgD3vBfebDW8j/3ysusxonuMexoigA+A3b/fYH7sEqiwyg==
+  dependencies:
+    "@floating-ui/core" "^0.7.2"
 
 "@fontsource/fira-mono@^4.5.0":
   version "4.5.8"
@@ -262,16 +274,17 @@
     magic-string "^0.26.2"
     svelte-hmr "^0.14.12"
 
-"@svelteuidev/composables@0.6.5":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@svelteuidev/composables/-/composables-0.6.5.tgz#993f1cc2c888137c2ba8c48d68fe64c58b32ceee"
-  integrity sha512-aFhNLGkf4067nK7522LIEUbzfKDHJUxFjNX4JMOPkPyuv7iNyMeWvMAqZgqvyUKZ+EKi1qMZJUFevIB4IsQzEw==
+"@svelteuidev/composables@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@svelteuidev/composables/-/composables-0.6.8.tgz#2b4da905cf6e20af8df5b17d7334816a8a672ee6"
+  integrity sha512-Mb8uDh5M0+kJxbUXP6gEHM1bZrCTfeBAztKOCLbvqlODZT3fOojhbHh5+Z4OJCqewLRDdrkB7LSV7YDKQHdJXw==
 
-"@svelteuidev/core@0.6.5":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@svelteuidev/core/-/core-0.6.5.tgz#1503251b71b6748c4ebf8d6c18cb945e3938b6e6"
-  integrity sha512-H3PnmYmfYaQEowQsE3J2UULlStcIrAaiht2eO1QDNrZ7H2PIXKkBBZdpdoNYrGZg0AP/t5ovU/+q4lOOCTNVWA==
+"@svelteuidev/core@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@svelteuidev/core/-/core-0.6.8.tgz#4e76d602c92ba49b121d97031fc6a717b256335a"
+  integrity sha512-EA1dFSR2R0jgfgPVt9c34zMrOSnvfYOseu6MzxaDeHZvsH0GKa8U8xDVOp20d0CgOW2Q5kF6tfwz9YxDYZN1kA==
   dependencies:
+    "@floating-ui/dom" "0.5.2"
     "@stitches/core" "1.2.8"
 
 "@types/cookie@^0.4.1":
