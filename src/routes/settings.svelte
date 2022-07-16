@@ -14,7 +14,7 @@
 >
 	{#each { length: 8 } as _, i}
 		<div>
-			<Card.Container shadow="md" p="lg">
+			<Card shadow="md" p="lg">
 				<Card.Section first padding="lg">
 					<Image
 						height={160}
@@ -36,7 +36,7 @@
 				<Button variant="light" color="blue" fullSize override={{ marginTop: '14px' }}>
 					Book classic tour now
 				</Button>
-			</Card.Container>
+			</Card>
 		</div>
 	{/each}
 </SimpleGrid>

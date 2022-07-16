@@ -71,10 +71,10 @@
 		}
 	}));
 
-	$: ({ classes, getStyles } = useStyles());
+	$: ({ classes } = useStyles());
 </script>
 
-<div class={getStyles()}>
+<div class={classes.root}>
 	<Container size="lg">
 		<div class={classes.inner}>
 			<div class={classes.content}>

@@ -27,10 +27,10 @@
 		}
 	}));
 
-	$: ({ getStyles, classes } = useStyles());
+	$: ({ classes } = useStyles());
 </script>
 
-<div class={getStyles()}>
+<div>
 	<Paper withBorder p="md" radius="md">
 		<Group position="apart">
 			<div>

@@ -18,7 +18,7 @@
 		}
 	}));
 
-	$: ({ classes, getStyles } = useStyles());
+	$: ({ classes } = useStyles());
 	interface statusType {
 		title: string;
 		value: string | number;
@@ -32,7 +32,7 @@
 	];
 </script>
 
-<div class={getStyles()}>
+<div>
 	<SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
 		<Title order={4} class={classes.title}>Dashboard</Title>
 		<Group position="right">
