@@ -32,30 +32,29 @@
 		override={{
 			main: {
 				bc: isDark ? fns.themeColor('dark', 8) : fns.themeColor('gray', 0),
-				minHeight: 'calc(100vh - 60px)'
 			},
-			'@md': { pl: 300, pt: 60 },
-			pt: 60
 		}}
+		fixed
 		use={[[lockscroll, scrollLocked]]}
 	>
 		<Navbar
 			slot="navbar"
 			fixed
 			hidden={!opened}
-			width={{ base: 300 }}
 			override={{ p: '$mdPX' }}
-			position={{ top: 60, left: 0 }}
+			position={{ top: 0, left: 0 }}
+			hiddenBreakpoint="sm"
+			width={{ sm: 200, lg: 250 }}
 		>
 			<NavContent toggleOpen={toggleOpened} />
 		</Navbar>
-		<Header slot="header" height={60} override={{ p: '$mdPX', pt: 12 }} fixed>
+		<Header slot="header" height={60} override={{ p: '$mdPX' }} fixed>
 			<HeadContent {isDark} {opened} toggle={toggleTheme} toggleOpen={() => {opened = !opened}} />
 		</Header>
 		{#if opened}
 			<Overlay opacity={0.6} color="#000" zIndex={5}/>
 		{/if}
-		<Container fluid override={{ mt: '$0', padding: 0, '@md': { padding: 16 } }}>
+		<Container fluid override={{ mt: '$0', padding: 0 }}>
 			<slot />
 		</Container>
 	</AppShell>
