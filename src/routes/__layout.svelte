@@ -45,12 +45,12 @@
 			hidden={!opened}
 			width={{ base: 300 }}
 			override={{ p: '$mdPX' }}
-			position={{ top: 0, left: 0 }}
+			position={{ top: 60, left: 0 }}
 		>
 			<NavContent toggleOpen={toggleOpened} />
 		</Navbar>
 		<Header slot="header" height={60} override={{ p: '$mdPX', pt: 12 }} fixed>
-			<HeadContent {isDark} {opened} toggle={toggleTheme} toggleOpen={() => {opened = true}} />
+			<HeadContent {isDark} {opened} toggle={toggleTheme} toggleOpen={() => {opened = !opened}} />
 		</Header>
 		{#if opened}
 			<Overlay opacity={0.6} color="#000" zIndex={5}/>
