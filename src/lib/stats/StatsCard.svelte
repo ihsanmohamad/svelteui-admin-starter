@@ -30,7 +30,7 @@
 	$: ({ classes } = useStyles());
 </script>
 
-<div>
+<div class={classes.root}>
 	<Paper withBorder p="md" radius="md">
 		<Group position="apart">
 			<div>
